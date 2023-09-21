@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Discover Amazing places in Georgia" />
+    <meta name="keywords" content="HTML, CSS, javaScript" />
+    <meta name="author" content="Nino Sopoian" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fb meta tags -->
+    <meta
+      property="og:url"
+      content="https://nino5982.github.io/georgia-tours/"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="My firs project about Georgian tours" />
+    <meta
+      property="og:description"
+      content="Snowy mountains, lush forests, and delicious wine. One of the most ecologically diverse and underestimated countries."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/Nino5982/georgia-tours/blob/main/images/intro-bg-1.jpg"
+    />
+    <title>Discover Amazing places in Georgia</title>
+    <link rel="shortcut icon" href="images/icons/odigo-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="wraper">
+        <div class="header-wraper">
+          <div class="header-logo">
+            <a href="#home" class="header-logo-link js-scroll"
+              ><img
+                src="images/icons/odigo-logo.svg"
+                alt="Discover Amazing places in Georgia"
+                class="header-logo-pic"
+            /></a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="#articles" class="header-link js-scroll">Articles</a>
+              </li>
+              <li class="header-item">
+                <a href="#locations" class="header-link js-scroll">Locations</a>
+              </li>
+              <li class="header-item">
+                <a href="#clients" class="header-link js-scroll">our clients</a>
+              </li>
+              <li class="header-item">
+                <a href="#videos" class="header-link js-scroll">Videos</a>
+              </li>
+              <li class="header-item">
+                <button class="btnlogin-popup">Sign in</button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header_burger">
+            <span class="burger-line burger-line-first"></span>
+            <span class="burger-line burger-line-second"></span>
+            <span class="burger-line burger-line-third"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <main class="main">
+      <!--  intro section start -->
+
+      <section class="intro">
+        <div class="wraper">
+          <div class="hide login-home">
+            <div class="sign-wrapper">
+              <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+              <!-- <div class="wraper"> -->
+              <!-- log in start-->
+              <div class="form-box login">
+                <h2 class="form-box-title">Login</h2>
+                <form action="#" id="login-form">
+                  <div class="input-box">
+                    <span class="icon email-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input class="input-box-input" type="email" required />
+                    <label class="input-box-label">email</label>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon pasw-icon">
+                      <i class="fa-solid fa-eye" id="show-icon-login"></i
+                    ></span>
+                    <input
+                      id="password-in-login"
+                      class="input-box-input"
+                      type="password"
+                      required
+                    />
+                    <label class="input-box-label">password</label>
+                  </div>
+                  <div class="remember-forgot">
+                    <label>
+                      <input
+                        class="remember-forgot-input"
+                        type="checkbox"
+                      />Remember Password</label
+                    >
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+                  <div class="login-register">
+                    <p class="login-register-content">
+                      Don't have an acount?
+                      <a href="#!" class="register-link">Register</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <!--log in end  -->
+              <!-- register start -->
+              <div class="form-box register">
+                <h2 class="form-box-title">Registration</h2>
+                <form action="#" id="registration-form" method="post">
+                  <div class="input-box">
+                    <span class="icon user-icon">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      class="input-box-input"
+                    />
+                    <label class="input-box-label">Username</label>
+                    <p class="error-message" id="erorr-username"></p>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon email-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="input-box-input"
+                    />
+                    <label for="email" class="input-box-label">email</label>
+                    <p class="error-message" id="erorr-email"></p>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon pasw-icon">
+                      <i class="fa-solid fa-eye" id="show-icon"></i
+                    ></span>
+                    <input
+                      id="password"
+                      name="password"
+                      class="input-box-input"
+                      type="password"
+                    />
+                    <label for="password" class="input-box-label"
+                      >password</label
+                    >
+                    <p class="error-message" id="erorr-password"></p>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon pasw-icon">
+                      <i class="fa-solid fa-lock"></i
+                    ></span>
+                    <input
+                      id="password-confirmation"
+                      name="passwConfirm"
+                      class="input-box-input"
+                      type="password"
+                    />
+                    <label for="password-confirmation" class="input-box-label"
+                      >password confirmation</label
+                    >
+                    <p class="error-message" id="erorr-passwConfirm"></p>
+                  </div>
+                  <div class="remember-forgot">
+                    <label for="agree">
+                      <input
+                        id="agree"
+                        name="check"
+                        class="remember-forgot-input"
+                        type="checkbox"
+                      />
+                      agree to the terms & conditions</label
+                    >
+                    <p class="error-message" id="erorr-check"></p>
+                  </div>
+                  <button type="submit" class="btn">Register</button>
+                  <div class="login-register">
+                    <p class="login-register-content">
+                      Already have an acount?
+                      <a href="#!" class="login-link">Login</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <!-- register end -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <!-- /section -->
+          <h1 class="intro-title">Discover Amazing places in Georgia</h1>
+          <p class="intro-subtitle">
+            Snowy mountains, lush forests, and delicious wine. One of the most
+            ecologically diverse and underestimated countries.
+          </p>
+          <form class="search-form">
+              <p class="search-form-info">
+              
+                <input
+                  id="filter"
+                  type="text"
+                  name="user-like-to-go"
+                  class="search-form-field"
+                  placeholder="Where would you like to go?"
+                />
+                <button type="submit" class="search-form-submit">search</button>
+              </p>
+          </form>
+          <ul id="result" class="user-list">
+          </ul>
+        </div>
+      </section>
+      <!--  intro section end -->
+
+      <!-- benefit section start -->
+      <section class="benefits">
+        <div class="benefits-wrap">
+          <div class="benefit-card-title-animation-box">
+            <img
+              src="images/icons/benefit-animation.svg"
+              class="car-image"
+              alt="Benefits of Odigo"
+            />
+            <span class="border-top"></span>
+          </div>
+          <h2 class="benefits-title">Benefits of Odigo</h2>
+          <div class="benefits-cards">
+            <div class="benefit-card">
+              <div class="benefit-card-pic">
+                <img
+                  class="benefit-card-icon"
+                  src="images/icons/benefits-1.svg"
+                  alt="Welcome to Odigo!"
+                />
+              </div>
+
+              <h3 class="benefit-card-title">Unforgettable experiences</h3>
+
+              <p class="benefit-card-descr">
+                Whether you're into historical architecture and art or walking
+                amongst rolling hills and vineyards, we've got a trip for you.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card-pic">
+                <img
+                  class="benefit-card-icon"
+                  src="images/icons/benefits-2.svg"
+                  alt="Your Personal Georgia Guide!"
+                />
+              </div>
+              <h3 class="benefit-card-title">Your Personal Georgian Guide</h3>
+              <p class="benefit-card-descr">
+                Enjoy and experience the best of all of Georgia like a local.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card-pic">
+                <img
+                  class="benefit-card-icon"
+                  src="images/icons/benefit-3.svg"
+                  alt="Offers and discounts"
+                />
+              </div>
+              <h3 class="benefit-card-title">Offers and discounts</h3>
+              <p class="benefit-card-descr">
+                Discover our current offers and save money on your next Explore
+                holiday.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- benefit section end -->
+
+      <!-- places start -->
+      <section class="places">
+        <div class="wraper-full">
+          <div class="places-caption">
+            <h2 class="section-title places-title">
+              Get inspired for your next trip
+            </h2>
+            <a href="#!" class="places-view-all">VIEW ALL</a>
+          </div>
+          <div class="places-cards">
+            <figure class="places-card places-card-size-large">
+              <img
+                src="images/place-1.jpg"
+                alt="Batumi"
+                class="places-card-pic places-card-pic-size-large"
+              />
+              <a href="#!" class="places-card-link"></a>
+              <figcaption class="places-card-title">Batumi</figcaption>
+            </figure>
+
+            <figure class="places-card places-card-size-large">
+              <img
+                src="images/place-2.jpg"
+                alt="Tusheti"
+                class="places-card-pic places-card-pic-size-large"
+              />
+              <a href="#!" class="places-card-link"></a>
+              <figcaption class="places-card-title">Tusheti</figcaption>
+            </figure>
+
+            <figure class="places-card places-card-size-small">
+              <img
+                src="images/place-3.jpg"
+                alt="Akhaltsikhe Castle"
+                class="places-card-pic places-card-pic-size-small"
+              />
+              <a href="#!" class="places-card-link"></a>
+
+              <figcaption class="places-card-title">
+                Akhaltsikhe Castle
+              </figcaption>
+            </figure>
+
+            <figure class="places-card places-card-size-small">
+              <img
+                src="images/place-4.jpg"
+                alt="Vardzia"
+                class="places-card-pic places-card-pic-size-small"
+              />
+              <a href="#!" class="places-card-link"></a>
+
+              <figcaption class="places-card-title">Vardzia</figcaption>
+            </figure>
+
+            <figure class="places-card places-card-size-small">
+              <img
+                src="images/place-5.jpg"
+                alt="Machakhela Reserve"
+                class="places-card-pic places-card-pic-size-small"
+              />
+              <a href="#!" class="places-card-link"></a>
+
+              <figcaption class="places-card-title">
+                Machakhela Reserve
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- places end -->
+
+      <!-- tours start -->
+      <div class="tours" id="articles">
+        <div class="wraper-full">
+          <div class="tours_tour tour">
+            <div class="tour_pic">
+              <img
+                src="images/tour-1.jpg"
+                alt="Wine Tour to Kakheti"
+                class="tour_thamb"
+              />
+            </div>
+            <div class="tour_info">
+              <h3 class="tour_title">Wine Tour to Kakheti</h3>
+              <p class="tour-desc">
+                Explore the stunning wine region of Kakheti during this private,
+                full-day food and wine tasting tour. Taste local bread and
+                artisanal cheese in Signagi, tour the idyllic gardens of the
+                Bodbe Monastery of St. Nino, and visit a wine shop and cellar
+                while tasting over 40 wine varieties.
+              </p>
+              <a
+                href="https://www.tripadvisor.com/AttractionProductReview-g294195-d15304278-Full_Day_Kakheti_Wine_Region_Private_Guided_Tour-Tbilisi.html"
+                class="tour_more"
+              >VIEW PREFCTURE
+              </a>
+            </div>
+          </div>
+
+          <div class="tours_tour tour">
+            <div class="tour_info">
+              <h3 class="tour_title">
+                Kazbegi tour - Discover Caucasus mountains
+              </h3>
+              <p class="tour-desc">
+                During the 4-day period you will see Greater Caucasus Mountains,
+                waterfalls and canyons and discover the country's unique nature.
+              </p>
+              <a href="#!" class="tour_more">VIEW NEIGBORHOOD</a>
+            </div>
+
+            <div class="tour_pic tour_pic-mob-first">
+              <img
+                src="images/tour-2.jpg"
+                alt="KAZBEGI TOUR - DISCOVER CAUCASUS MOUNTAINS"
+                class="tour_thamb"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--tours end -->
+      <!-- top places start -->
+      <section class="top" id="locations">
+        <div class="wraper-full">
+          <h2 class="section-title top-title">Today top places to visit</h2>
+
+          <!--  -->
+          <div class="top-cards">
+            <!-- 1 -->
+            <div class="top-card">
+              <div class="top-card-pic">
+                <img
+                  src="images/top-pic-1.jpg"
+                  alt="Sighnaghi"
+                  class="top-card-thumb"
+                />
+                <div class="top-card-status">
+                  <h3 class="top-card-title">SIGHNAGHI</h3>
+                  <div class="top-card-likes">
+                    <span class="top-card-likes-value"> 221 </span>
+                  </div>
+                  <div class="top-card-comments">
+                    <span class="top-card-comments-value"> 50 </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top-card-desc">
+                Sighnaghi is perhaps Georgia's single most attractive town, with
+                an amazing position perched on a lofty hilltop facing the
+                snowcapped Caucasus looming in the distance across the vast
+                Alazani valley.
+              </p>
+              <a
+                href="https://www.lonelyplanet.com/georgia/kakheti/sighnaghi"
+                class="top-card-more"
+              >
+                SEE MORE
+              </a>
+            </div>
+            <!-- 2 -->
+            <div class="top-card">
+              <div class="top-card-pic">
+                <img
+                  src="images/top-pic-2.jpg"
+                  alt="Svaneti"
+                  class="top-card-thumb"
+                />
+                <div class="top-card-status">
+                  <h3 class="top-card-title">SVANETI</h3>
+                  <div class="top-card-likes">
+                    <span class="top-card-likes-value"> 121 </span>
+                  </div>
+                  <div class="top-card-comments">
+                    <span class="top-card-comments-value"> 33</span>
+                  </div>
+                </div>
+              </div>
+              <p class="top-card-desc">
+                Breathtakingly wild and mysterious, Svaneti is an ancient land
+                locked in the Caucasus, so remote that it was never tamed by any
+                ruler. Uniquely picturesque villages and snow-covered,
+                4000m-plus peaks rising above flower-strewn alpine meadows
+                provide a superb backdrop to the many walking trails.
+              </p>
+              <a
+                href="https://www.lonelyplanet.com/georgia/the-mountains/svaneti"
+                class="top-card-more"
+              >
+                SEE MORE
+              </a>
+            </div>
+            <!-- 3 -->
+            <div class="top-card">
+              <div class="top-card-pic">
+                <img
+                  src="images/top-pic-3.jpg"
+                  alt="Javakheti Protected Areas"
+                  class="top-card-thumb"
+                />
+                <div class="top-card-status">
+                  <h3 class="top-card-title">Javakheti Protected Areas</h3>
+                  <div class="top-card-likes">
+                    <span class="top-card-likes-value"> 378 </span>
+                  </div>
+                  <div class="top-card-comments">
+                    <span class="top-card-comments-value"> 57</span>
+                  </div>
+                </div>
+              </div>
+              <p class="top-card-desc">
+                Javakheti Protected Areas include Municipalities of Akhalqalaqi
+                and Ninotsminda. There are lots of lakes on Javakheti Plateau,
+                including the biggest one – Lake Paravani. The highest point of
+                Javakheti is Mount Great Abuli, with a height of 3,300 meters
+                above sea level.
+              </p>
+              <a href="#!" class="top-card-more"> SEE MORE </a>
+            </div>
+            <!-- 4 -->
+            <div class="top-card">
+              <div class="top-card-pic">
+                <img
+                  src="images/top-pic-4.jpg"
+                  alt="Matvili Canyon"
+                  class="top-card-thumb"
+                />
+                <div class="top-card-status">
+                  <h3 class="top-card-title">MARTVILI CANYON</h3>
+                  <div class="top-card-likes">
+                    <span class="top-card-likes-value"> 157 </span>
+                  </div>
+                  <div class="top-card-comments">
+                    <span class="top-card-comments-value"> 23</span>
+                  </div>
+                </div>
+              </div>
+              <p class="top-card-desc">
+                Destination - Martvili Canyon! Are you planning your trip to the
+                Black Sea? Just remember that Martvili Canyon is 45 km away from
+                Kutaisi, and before discovering the Black Sea, experience a part
+                of Georgia, which used to be a bathing place of Dadiani.
+              </p>
+              <a href="#!" class="top-card-more"> SEE MORE </a>
+            </div>
+            <!--  5-->
+            <div class="top-card">
+              <div class="top-card-pic">
+                <img
+                  src="images/top-pic-5.jpg"
+                  alt="Tbilisi"
+                  class="top-card-thumb"
+                />
+                <div class="top-card-status">
+                  <h3 class="top-card-title">TBILISI</h3>
+                  <div class="top-card-likes">
+                    <span class="top-card-likes-value"> 250 </span>
+                  </div>
+                  <div class="top-card-comments">
+                    <span class="top-card-comments-value"> 78</span>
+                  </div>
+                </div>
+              </div>
+              <p class="top-card-desc">
+                Georgia's capital, Tbilisi, is straight from the pages of a
+                Gothic fairytale. A deep valley forms the backdrop to brightly
+                colored turrets, cobblestoned streets, and a burgeoning art
+                scene
+              </p>
+              <a
+                href="https://www.tripadvisor.com/Tourism-g294195-Tbilisi-Vacations.html"
+                class="top-card-more"
+              >
+                SEE MORE
+              </a>
+            </div>
+            <!--  6-->
+            <div class="top-card">
+              <div class="top-card-pic">
+                <img
+                  src="images/top-pic-6.jpg"
+                  alt="TUSHETI"
+                  class="top-card-thumb"
+                />
+                <div class="top-card-status">
+                  <h3 class="top-card-title">TUSHETI</h3>
+                  <div class="top-card-likes">
+                    <span class="top-card-likes-value"> 120 </span>
+                  </div>
+                  <div class="top-card-comments">
+                    <span class="top-card-comments-value"> 45</span>
+                  </div>
+                </div>
+              </div>
+              <p class="top-card-desc">
+                Tusheti – hidden in the Caucasus Mountains is the treasure of
+                Georgia. The mysterious part is different from all the other
+                sides of Georgia, its nature is diverse and enchants tourists.
+              </p>
+              <a
+                href="https://nationalparks.ge/en/site/tushetinp"
+                class="top-card-more"
+              >
+                SEE MORE
+              </a>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <!-- top places end -->
+
+      <!-- users section start -->
+      <section id="clients" class="user-section">
+        <div class="wraper-full">
+          <h2 class="user-title section-title">OUR CLIENTS</h2>
+          <div id="api-wraper" class="user-wraper">
+            <button id="loadprev" class="btn users-load-button">Previous</button>
+          <ul id="list-items" class="users-cards">
+          </ul>
+        <button id="loadnext" class="btn users-load-button">Next</button>
+          <!-- </div> -->
+        </div>
+      </div>
+      </section>
+      <!-- users section end  -->
+      <!-- videos start  -->
+      <div class="videos" id="videos">
+        <div class="videos-wraper">
+          <div class="video-item"></div>
+
+          <iframe
+            class="video-element"
+            src="https://www.youtube.com/embed/YAQWNHALsg4?si=1sEfmib8MTtU65Nu"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <!-- videos end -->
+      <a href="#" class="scrol-on-top">
+        <i class="fa-solid fa-jet-fighter-up"></i>
+      </a>
+    </main>
+    <footer class="footer">
+      <div class="wraper">
+        <div class="footer-item">
+          <div class="footer-logo">
+            <img
+              src="images/icons/footer-odigo-Logo.svg"
+              alt="Discover Amazing places in Georgia"
+              class="footer-logo-pic"
+            />
+          </div>
+          <nav class="footer-nav">
+            <!--  -->
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <h3 class="footer-menu-title">company</h3>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">About</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Team</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Careers</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <h3 class="footer-menu-title">Locations</h3>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Tbilisi</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Kutaisi</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Batumi</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Akhaltsikhe</a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <h3 class="footer-menu-title">Social Media</h3>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Facebook</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Twitter</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Instagram</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#!" class="footer-menu-link">Youtube</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/users.js" ></script>
+  </body>
+</html>
