@@ -1,3 +1,5 @@
+"use strict";
+
 let currentPage = 1;
 let totalPages;
 
