@@ -1,4 +1,4 @@
-
+"use strict";
 
 let formElement = document.getElementById("registration-form");
 
