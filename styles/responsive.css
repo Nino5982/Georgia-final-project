@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 960px) {
   .header{
     padding-bottom: 5px;
@@ -36,6 +43,7 @@
   }
   .places-card-size-large,
   .places-card-size-small {
+    -ms-grid-column-span: 6;
     grid-column: span 6;
   }
   .tours_tour {
@@ -64,6 +72,7 @@
   }
 
   .top-card {
+    -ms-grid-column-span: 3;
     grid-column: span 3;
   }
   .footer {
@@ -73,6 +82,8 @@
 
 @media (max-width: 766px) {
   .header_burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .header-nav {
@@ -125,6 +136,19 @@
   /* header and burger end */
 
   .intro {
+    background-image: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgb(59 58 65 / 62%)),
+        to(rgb(0 0 6 / 41%))
+      ),
+      url(../images/intro-bg-2.jpg);
+    background-image: -o-linear-gradient(
+        top,
+        rgb(59 58 65 / 62%),
+        rgb(0 0 6 / 41%)
+      ),
+      url(../images/intro-bg-2.jpg);
     background-image: linear-gradient(
         to bottom,
         rgb(59 58 65 / 62%),
@@ -165,6 +189,7 @@
     width: 100%;
   }
   .benefit-card {
+    -ms-grid-column-span: 3;
     grid-column: span 3;
   }
   .benefit-card-pic {
@@ -204,7 +229,8 @@
   }
   .tour_pic-mob-first {
    grid-row: -1;
-    grid-row-start: -1;
+    -ms-grid-row: -1;
+        grid-row-start: -1;
   }
   .tours_tour {
     margin-bottom: 50px;
@@ -260,7 +286,8 @@
 
 }
 .top-card-status{
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .footer-logo {
   width: 30%;
@@ -318,4 +345,3 @@
 }
 
 }
-
