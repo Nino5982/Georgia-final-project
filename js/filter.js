@@ -1,3 +1,5 @@
+"use strict";
+
 const input = document.getElementById("filter");
 const ulResult = document.getElementById("result");
 const listItems = [];
